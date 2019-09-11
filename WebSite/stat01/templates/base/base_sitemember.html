@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+
+  {% block link %}{% endblock %}
+    
+  {% load staticfiles %}
+    <link href="{% static "_css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "_css/stat.css" %}" rel="stylesheet" type="text/css" />  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+      {% block style %}{% endblock %}
+    </style>
+</head>
+
+<body>
+  <div id="headWapper">
+      <div id="header">
+        <h1><a href="/index" title="輔仁大學統計資訊學系">輔仁大學統計資訊學系</a></h1>
+          <div class="topmenu01">
+              <ul>
+                  <li><a href="/sitemap_01">網站導覽</a></li><li>|</li>
+                  <li><a href="/sitemember_01">網站製作團隊</a></li><li>|</li>
+                  <li><a href="http://www.stat.fju.edu.tw/index_en.php" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','../_img/00_layout/englishB.gif',1)">
+                  <img src="{% static "_img/00_layout/english.gif" %}" alt="English" name="Image13" id="Image13" width="45" height="13" border="0"></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">輔仁大學統計資訊學系</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/news_01">最新公告<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about_01">本系簡介</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/teacher_01">師資陣容</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/class_01">課程資訊</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- -->
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+    {% block content %}
+        <div class="col">{% block oneblock_fluid %}{% endblock %}</div>
+    {% endblock %}
+    </div>
+  </div>
+    
+    
+    <div id="footer">
+        <div class="footerFont01">©2008 Fu Jen Catholic University Department of Statistics and Information Science All rights reserved</div>
+        <div class="footerFont02">地址：24205新北市新莊市中正路510號   電話：02-2905-2606(學士班)   02-2905-2935(碩士班、碩職班)</div>
+      </div>
+    <div class="footer_w03">|&nbsp; 隱私聲明<br>
+      <span class="footerFont03">Designed by Creatop<a href="http://www.creatop.com.tw/" title="創造力網頁設計" target="_blank">網頁設計 </a></span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+.fontBlack{ color:#333; font-weight:bold;}
+.OverviewTit01{color:#516A1F; font-family:Arial, Helvetica, sans-serif; font-size:26px; line-height:135%; padding:65px 0 0 0px; display:block;}
+.aboutListMT{ padding:5px 0; color:#F15921;font-weight:bold; display:block; }
+.aboutListMT a{ color:#F15921;}
+.aboutListMT a:hover{ color:#F15921; }
+.aboutListFont{ font-size:10px; line-height:120%;}
+
+h4{ color:#516A20; font-size:24px; line-height:28px; 
+/*margin:0px 0px 0px -30px;*margin:0px 0px 0px 10px!important;*margin:0px 0px 0px 10px; */
+padding-top:0px;padding:0px 0px 0px 0\0; *padding-top:30px !important;width:auto;display:block; font-weight:normal;}
+
+
+
+
+.prod_tit9{font-size:26px; line-height:28px;color:#516A20; padding-top:30px; display:block;}.
+.center{ text-align:center;}
+.indeximgleft{ float:left; display:block; width:100%;}
+
+.contactFormFont01{ color:#000; padding:10px 15px 10px 0; display:block; width:110px;}
+/*----------------------------- research  edit css        ---------------------------------------*/
+
+.edit_researchline{border-left:1px solid #89A4EA;border-right:1px solid #89A4EA;border-bottom:1px solid #89A4EA;}
+.edit_researchP10{ padding:5px 10px;}
+.edit_research_title{ font-size:15px; font-weight:bold;background:url(../_img/00_layout/icon_arrow02.jpg) top left no-repeat; color:#3260A8; padding-left:20px;}
+.edit_research_list{font-weight:bold;background:url(../_img/00_layout/arrow04.jpg) top left no-repeat;color:#2C9FDA;padding:10px 0 10px 12px; margin:0;}
+
+/*----------------------------- about  edit css        ---------------------------------------*/
+.edit_about2_layoutBg{background:url(../_img/02_about/about_edit_201_midbg.jpg) top left repeat-y; padding:0 4px 0 20px;}
+.edit_about3_layoutBg{background:url(../_img/02_about/about_edit_201_midbg.jpg) top left repeat-y; padding:0 20px 0 20px;}
+.edit_btmline{ padding-bottom:20px;background: url(../_img/00_layout/dashline01.jpg) repeat-x  left bottom}
+.edit_about5_layoutBg{ padding:20px 0;background: url(../_img/02_about/about_edit_505.jpg) no-repeat  left bottom;}
+.edit_about7_mapBg{ padding:3px 0 0 3px;background: url(../_img/02_about/about_edit_701.jpg) no-repeat  left top;}
+.edit_about7_mapfont_white{ color:#FFF; padding:20px 20px 40px 20px; line-height:20px;}
+.edit_about7_mapfont_tit{ color:#00397D; line-height:20px; font-size:15px;}
+.edit_mapfont_point{ color:#2c9fda;}
+.edit_mapfont_wrap{ padding:15px;background: url(../_img/00_layout/dashline01.jpg) repeat-x  left bottom; line-height:20px;color:#666;}
+.edit_about1_year{background: url(../_img/04_class/classovlist01_dot01a.jpg) no-repeat  left 8px; padding-left:7px;}

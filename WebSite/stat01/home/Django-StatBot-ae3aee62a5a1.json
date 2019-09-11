@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "django-statbot-shtmnf",
+  "private_key_id": "ae3aee62a5a15dae5d1717a288c98a8e63799cb3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQChp5VbrOgDuLcA\nP2Mb/lnMano6wXoLEJzSuVX0Zymyg2FCBotofvUoimQH1ANAdrKAuGnZfJfOGtoN\nLNb5d4bg8yCOdmB9N5w0Qacucq8cOLwrw63wTPuV3iVOTiNn1+YRS9rIPDXFcURs\nmo3VN2THDlw9cwppWZzhf+celETQ3OCLNnsSWbK0tDgHUca0tfV0OFnVD4QrKikV\nvik0FoDn1eEYniRZlJuIBbtPg2Bqzdp0A7rGF2sOiMLoztFFnPzqj8YkaRwCXMxz\nZc8f7SIJrVY5rMR4+66aGzI9lW3IiIEIuoBi4t2BP0pSCLoDDTK9MpR06pJYuJ44\nlbBfuO3HAgMBAAECggEAI9k7nIxwGV8tqg7khjE2LchRGdWNIIYLGQoDv0LfctiC\nyXcVFFPPPzHNdBT2saWA+V2sD5B7Q7gdsf1HISR6E0mnZyBmTm52I/qJPhotrhcA\n1725xYf05OvSHxbh8CXnPd+yAWSk0gfH0kPF/0oc/a24E+J+pRU73qAUG2prBlwS\n4hCkmK+/PR7YJG7MQtrpdRiugNzlpZyfnAp3TKZE6fbuF2VSvsdgDI9jGiBXRtF8\naxQRkjzr1tCBRXtdH3FK5vbJPTjbdWGTKzh+R2glAAgzUPhqWnDK02bsJyf2ixHC\nYjeAhdhGUj2qmLMX7xMDYgDcYqzJlwxQIzDCd2V3DQKBgQDShKOVBbcD7VToNB6I\nVeALiqz1pFLDIjivZM3z++FuxTCjN32bEDDbnsGbzZdAY06dT+0gChTQ2UqxieY5\nXaac65iovtVKx3jDE525q2xMk9bK8AWStAaDoBNBAZVNOlkZ8aILR6JSx44PsmdN\nBBpUP9DbyeppNguWzY5oKRwQ6wKBgQDElGV1kPnOJMoKx7mzSKor5V4PCo0HBqGJ\ndkfgwZBUkHBzPJm/cMqGO9XIe6KPWZfuHw0AfOOJsvWwPqdxw+74iGYgYd4sc4MM\n6NHBEN5KAN2XsbBdqIsAMAzdVmKLZ31Y+z/Citop47Y7//X2zwDGx8fuavyQCsiX\npTX77lv/lQKBgQCF9V8+idduyUwZQmkXakXaMlFjMkBz6UfW3DduBR7rZNFRWxMz\nY/cjGX+rzARuNYMl+WEz3RZn2417MfvtDxnhis2mu2BwaEQBJm9cYafVhtHMazWw\np5vpkCgQWpiN/w4Jw0fRE7FIKbHNbUHssSqr57vY0EC42GpBeOYgg+BXJwKBgFpF\nRv4g8AXQ8RLYOpdww+xabMH9d1uFmQJ11XYJjQy4M1tHtdaqpeXUbkydMb4gR1tq\n2N6jex2Nl7MyYlQkxIVOpY8zQgIpnUF9XG0LIPjcwuVZDINF1WblqdKuS5x2jqIg\n5lugxaQ81D9jQADxeArQTShX6tj+irTQgiTJhWetAoGASoUiHFdYPipyr3snoMAA\n3apSYuhGvfxaa2PjJw4BOCsBB4o2lbanF+CeGc2gkF7G161IA3nVSOSh9aahF3aV\nt9mmRM34FGzGgxeFMzaBjSTc/TA17zN3n//WDWXUtARO09dUFFNnkgJPqwtyd196\nuF3jdOGHg8zozyjQDNx8ZRY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-epvgfm@django-statbot-shtmnf.iam.gserviceaccount.com",
+  "client_id": "116044353122794875826",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-epvgfm%40django-statbot-shtmnf.iam.gserviceaccount.com"
+}

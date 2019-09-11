@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html>
+<body>
+    {% block content %}
+    {% load staticfiles %}  
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true); 
+
+function flevDivPositionValue(sDiv, sProperty) { // v2.1, Marja Ribbers-de Vroed, FlevOOware
+	this.opera = (window.opera); // Opera 5+
+	this.ns4 = (document.layers); // Netscape 4.x
+	this.ns6 = (document.getElementById && !document.all && !this.opera); // Netscape 6+
+	this.ie = (document.all);  // Internet Explorer 4+
+    var sValue = ""; docObj = eval("MM_findObj('" + sDiv + "')"); if (docObj == null) {return 0;}
+	if ((sProperty == "left") || (sProperty == "top")) {
+		if (!this.ns4) {docObj = docObj.style;} 
+		sValue = eval("docObj." + sProperty);
+		if ((this.ie) && (sValue == "")) { // IE (on PC) bug with nested layers
+			if (sProperty == "top") { sValue = eval(sDiv + ".offsetTop"); } 
+			else { sValue = eval(sDiv + ".offsetLeft"); } 
+		};
+	}
+	else {
+		if (this.opera) {
+			docObj = docObj.style;
+			if (sProperty == "height") { sValue = docObj.pixelHeight; } 
+			else if (sProperty == "width") { sValue = docObj.pixelWidth; } 
+		}
+		else if (this.ns4) {sValue = eval("docObj.clip." + sProperty);} 
+		else if (this.ns6) {sValue = document.defaultView.getComputedStyle(docObj, "").getPropertyValue(sProperty); } 
+	    else if (this.ie) { 
+			if (sProperty == "width") { sValue = eval(sDiv + ".offsetWidth"); } 
+			else if (sProperty == "height") { sValue = eval(sDiv + ".offsetHeight"); } 
+		}
+   	}
+	sValue = (sValue == "") ? 0 : sValue; 
+	if (isNaN(sValue)) { if (sValue.indexOf('px') > 0) { sValue = sValue.substring(0,sValue.indexOf('px')); } } 
+	return parseInt(sValue); 
+}
+
+function flevPersistentLayer() { // v3.3, Marja Ribbers-de Vroed, FlevOOware
+	var sD = arguments[0], oD = eval("MM_findObj('" + sD + "')"), iWW, iWH, iSX, iSY, iT = 10, sS = "";
+	if (!document.layers) {oD = oD.style;}
+	if (oD.tmpTimeout != null) {clearTimeout(oD.tmpTimeout);}
+	var sXL = arguments[1], sXC = arguments[2], sXR = arguments[3], sYT = arguments[4], sYC = arguments[5], sYB = arguments[6];
+	var iS = (arguments.length > 7) ? parseInt(arguments[7]) : 0, iPx = (arguments.length > 8) ? parseInt(arguments[8]) : 0;
+	if (window.innerWidth) { // NS4, NS6 and Opera
+		var oW = window; iWW = oW.innerWidth; iWH = oW.innerHeight; iSX = oW.pageXOffset; iSY = oW.pageYOffset; }
+	else if (document.documentElement && document.documentElement.clientWidth) { // IE6 in standards compliant mode
+		var oDE = document.documentElement; iWW = oDE.clientWidth; iWH = oDE.clientHeight; iSX = oDE.scrollLeft; iSY = oDE.scrollTop; }
+	else if (document.body) { // IE4+
+		var oDB = document.body; iWW = oDB.clientWidth; iWH = oDB.clientHeight; iSX = oDB.scrollLeft; iSY = oDB.scrollTop; }
+	else {return;}
+	var iCX = iNX = flevDivPositionValue(sD, 'left'), iCY = iNY = flevDivPositionValue(sD, 'top');
+	if (sXL != "") {iNX = iSX + parseInt(sXL);} 
+	else if (sXC != "") {iNX = Math.round(iSX + (iWW/2) - (flevDivPositionValue(sD, 'width')/2));}
+	else if (sXR != "") {iNX = iSX + iWW - (flevDivPositionValue(sD, 'width') + parseInt(sXR));}
+	if (sYT != "") {iNY = iSY + parseInt(sYT);}
+	else if (sYC != "") {iNY = Math.round(iSY + (iWH/2) - (flevDivPositionValue(sD, 'height')/2));}
+	else if (sYB != "") {iNY = iSY + (iWH - flevDivPositionValue(sD, 'height') - parseInt(sYB));}
+	if ((iCX != iNX) || (iCY != iNY)) {
+		if (iS > 0) {
+			if (iPx > 0) { iT = iS;
+				var iPxX = iPx, iPxY = iPx, iMX = Math.abs(iCX - iNX), iMY = Math.abs(iCY - iNY);
+				// take care of diagonal movement
+				if (iMX < iMY) {iPxY = (iMX != 0) ? ((iMY/iMX)*iPx) : iPx;}
+				else {iPxX = (iMY != 0) ? ((iMX/iMY)*iPx) : iPx;}
+				if (iPxX >= iMX) {iPxX = Math.min(Math.ceil(iPxX), iPx);}
+				if (iPxY >= iMY) {iPxY = Math.min(Math.ceil(iPxY), iPx);}
+				// temporary X/Y coordinates
+				if ((iCX < iNX) && (iCX + iPxX < iNX)) {iNX = iCX + iPxX;}
+				if ((iCX > iNX) && (iCX - iPxX > iNX)) {iNX = iCX - iPxX;}
+				if ((iCY < iNY) && (iCY + iPxY < iNY)) {iNY = iCY + iPxY;}
+				if ((iCY > iNY) && (iCY - iPxY > iNY)) {iNY = iCY - iPxY;} }
+			else { 
+				var iMX = ((iNX - iCX) / iS), iMY = ((iNY - iCY) / iS); 
+				iMX = (iMX > 0) ? Math.ceil(iMX) : Math.floor(iMX); iNX = iCX + iMX; 
+				iMY = (iMY > 0) ? Math.ceil(iMY) : Math.floor(iMY); iNY = iCY + iMY; } }
+		if ((parseInt(navigator.appVersion)>4 || navigator.userAgent.indexOf("MSIE")>-1) && (!window.opera)) {sS="px";}
+		if (iMX != 0) {eval("oD.left = '" + iNX + sS + "'");}
+		if (iMY != 0) {eval("oD.top = '" + iNY + sS + "'");} }
+	var sF = "flevPersistentLayer('" + sD + "','" + sXL + "','" + sXC + "','" + sXR + "','" + sYT + "','" + sYC + "','" + sYB + "'," + iS + "," + iPx + ")";
+	oD.tmpTimeout = setTimeout(sF,10);
+}
+
+function flevInitPersistentLayer() { // v3.3, Marja Ribbers-de Vroed, FlevOOware #rightmenu
+	if (arguments.length < 8) {return;}
+	var sD = arguments[0]; if (sD == "") {return;}
+	var	oD = eval("MM_findObj('" + sD + "')"); if (!oD) {return;}
+	var iCSS = parseInt(arguments[1]);
+	var sXL = arguments[2], sXC = arguments[3], sXR = arguments[4], sYT = arguments[5], sYC = arguments[6], sYB = arguments[7];
+	var iS = (arguments.length > 8) ? parseInt(arguments[8]) : 0, iPx = (arguments.length > 9) ? parseInt(arguments[9]) : 0;
+	if (iCSS != 0) { if (!document.layers) {oD = oD.style;} sXL = parseInt(oD.left), sYT = parseInt(oD.top);}
+	var sF = "flevPersistentLayer('" + sD + "','" + sXL + "','" + sXC + "','" + sXR + "','" + sYT + "','" + sYC + "','" + sYB + "'," + iS + "," + iPx + ")";
+	eval(sF);
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<body onload="flevInitPersistentLayer(&#39;Layer1&#39;,0,&#39;80&#39;,&#39;&#39;,&#39;&#39;,&#39;0&#39;,&#39;&#39;,&#39;&#39;,15);MM_preloadImages(&#39;../_img/00_layout/englishB.gif&#39;)"><div id="bodyWapper"><!-- head start-->
+
+
+<div id="bodyWapper">
+<div id="layoutImg"><div id="Layer1" style="position: relative; width: 0px; height: 0px; z-index: 10; visibility: visible; float: right; left: 80px;"><!-- #BeginLibraryItem "/Library/rightdoor.lbi" -->
+ <div id="PageRightmenu" style="position:absolute; width:75px; height:220px; z-index:3;right:0px ;visibility: visible; top:145px;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td height="73" align="left" valign="top"><img src="{% static "_img/00_layout/door_top.jpg" %}" alt="" width="75" height="73"></td>
+        </tr>
+        <tr>
+          <td class="doorMenuBg" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/02_future.php">未來學生</a></td>
+            </tr>
+            <tr>
+              <td height="11" align="center"><img src="{% static "_img/00_layout/door_line.jpg" %}" alt="" width="75" height="11"></td>
+            </tr>
+            <tr>
+              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/01_current.php">現有學生</a></td>
+            </tr>
+            <tr>
+              <td align="center"><img src="{% static "_img/00_layout/door_line.jpg" %}" alt="" width="75" height="11"></td>
+            </tr>
+            <tr>
+              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/03_alumni.php">系所友</a></td>
+            </tr>
+          </tbody></table></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><a href="http://www.stat.fju.edu.tw/_chinese/09_download/01_download.php?RID=2#TOP"><img src="{% static "_img/00_layout/door_btm.jpg" %}" width="75" height="38"></a></td>
+        </tr>
+      </tbody></table>
+    </div><!-- #EndLibraryItem --></div><!-- InstanceBeginEditable name="EditRegion5" --><img src="{% static "_img/00_layout/flashad09.jpg" %}" alt="輔仁大學統計資訊學系-相關資源" width="960" height="145"><!-- InstanceEndEditable --></div>
+
+
+
+ 
+
+<!-- body main wapper  start-->
+<div id="body_w0"><!-- InstanceBeginEditable name="EditRegion3" -->
+  <div id="body_w1"><span class=""><img src="{% static "_img/09_download/title_download.jpg" %}" alt="輔仁大學統計資訊學系-相關資源" width="170" height="45"></span>
+    <div class="leftmenu01">
+      <ul>
+			 <li><a href="/download_01">輔大校園資源</a></li>
+						 <li><a href="/download_02">國內統計系所</a></li>
+						 <li><a href="/download_03"><span class="leftmenu02">國內統計機構</span></a></li>
+						 <li><a href="/download_04">國外統計機構</a></li>
+						 <li><a href="/download_05">研究計畫GRB</a></li>
+						 <li><a href="/download_06">統計期刊</a></li>
+						 <li><a href="/download_07">資訊期刊</a></li>
+						 <li><a href="/download_08">統計資料庫</a></li>
+						 <li><a href="/download_09">統計軟體</a></li>
+						 <li><a href="/download_10">EDUNIVERSAL商學院評比</a></li>
+			      </ul>
+    </div>
+    <!-- quicklink start-->
+
+            <div class="quicklinkMarg"></div>
+			<div class="menuQuick"><a href="/student_07"><img src="{% static "_img/menu01294041777.jpg" %}" width="170" alt="活動相簿"></a></div>
+			            <div class="quicklinkMarg"></div>
+			<div class="menuQuick"><a href="http://www.stat.fju.edu.tw/_chinese/04_class/01_overview.php" target="_self"><img src="{% static "_img/menu01294041695.jpg" %}" width="170" alt="課程資訊"></a></div>
+			            <div class="quicklinkMarg"></div>
+			<div class="menuQuick"><a href="http://www.stat.fju.edu.tw/_chinese/05_join/01_overview.php" target="_self"><img src="{% static "_img/menu01294047528.jpg" %}" width="170" alt="招生資訊"></a></div>
+			  </div>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditRegion4" -->
+<div id="body_w2">
+  <!-- title start-->
+  <div id="bodytop_w0">
+    <div id="bodyTitle">國內統計機構</div>
+    <div id="steerage"><a href="http://www.stat.fju.edu.tw/index.php">首頁</a><img src="{% static "_img/00_layout/arrow01.gif" %}" width="18" height="7"><a href="http://www.stat.fju.edu.tw/_chinese/09_download/01_download.php">相關資源</a><img src="{% static "_img/00_layout/arrow01.gif" %}" width="18" height="7"><span class="leftmenu02">國內統計機構</span></div>
+  </div>
+  <!-- body layout start-->
+  <div class="edit">
+  <div class="downtitleBg"></div>
+  <div class="donwn_coment">
+     <ul>
+			 <li><a href="http://www.cips.org.tw/" target="_blank">中華機率統計學會</a></li>
+						 <li><a href="http://www.stat.gov.tw/mp.asp?mp=4" target="_blank">中華民國統計資訊網</a></li>
+						 <li><a href="http://www.judicial.gov.tw/juds/index1.htm" target="_blank">司法院司法統計</a></li>
+						 <li><a href="http://sowf.moi.gov.tw/stat/" target="_blank">內政統計資訊網</a></li>
+						 <li><a href="http://www.dbas.taipei.gov.tw/MP_120001.html" target="_blank">臺北市政府主計處</a></li>
+						 <li><a href="http://www.cdms.org.tw/" target="_blank">中華資料採礦協會</a></li>
+						 <li><a href="http://www.stat.sinica.edu.tw/statnewsite/" target="_blank">中央研究院統計科學研究所 </a></li>
+						 <li><a href="http://www.stat.org.tw/" target="_blank">中國統計學社</a></li>
+						 <li><a href="http://wt.nhri.org.tw/NHRI_WEB/nhriw001Action.do" target="_blank">國家衛生研究院生物統計與生物資訊研究組</a></li>
+						 <li><a href="http://www.dgbas.gov.tw/mp.asp?mp=1" target="_blank">行政院主計處</a></li>
+						 <li><a href="http://www.motc.gov.tw/mocwebGIP/wSite/np?ctNode=538&amp;mp=1" target="_blank">交通部統計處</a></li>
+						 <li><a href="http://www.cla.gov.tw/cgi-bin/SM_theme?page=41761dc1" target="_blank">行政院勞委會勞動統計</a></li>
+						 <li><a href="http://www.datamining.org.tw/" target="_blank">Data Mining研究中心</a></li>
+			     </ul>
+  </div>
+  
+  </div>
+</div>
+<!-- InstanceEndEditable --></div>
+</div>
+
+
+{% endblock %}
+
+</body><!-- InstanceEnd -->
+</html>
+
+<!-- InstanceEnd --></body></html>

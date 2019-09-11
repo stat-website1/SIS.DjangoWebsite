@@ -1,0 +1,34 @@
+{% extends 'base/base_sidebar.html' %}
+{% load staticfiles %}  
+
+{% block title %}輔仁大學統計資訊學系{% endblock %}
+
+
+{% block style %}
+{% endblock %}
+
+{% block leftbar %}
+            <ul class="list-group ">
+              <li class="list-group-item"><a href="/about_01">沿革</a></li>
+              <li class="list-group-item"><a href="/about_02">教學理念</a></li>
+              <li class="list-group-item"><a href="/about_03">設備</a></li>
+              <li class="list-group-item"><a href="/about_04">特色</a></li>
+              <li class="list-group-item"><a href="/about_05">未來發展</a></li>
+              <li class="list-group-item"><a href="/about_06">章程辦法</a></li>
+              <li class="list-group-item"><a href="/about_07">交通資訊</a></li>
+              <li class="list-group-item"><a href="/about_08">教師學術研究</a></li>
+            </ul>
+            <img src="{% static "_img/02_about/title_about.jpg" %}" alt="輔仁大學統計資訊學系-本系簡介" width="170" height="45">
+            <div class="menuQuick"><a href="" target="_self"><img src="{% static "_img/menu01294041777.jpg" %}" alt="活動相簿" width="170"></a></div>
+            <div class="menuQuick"><a href="" target="_self"><img src="{% static "_img/menu01294047528.jpg" %}" alt="招生資訊" width="170"></a></div>
+{% endblock %}
+{% block rightbar %}
+            <img src="{% static "_img/00_layout/flashad02.jpg" %}" alt="輔仁大學統計資訊學系-本系簡介" width="960" height="145">
+            <div>沿革</div>
+                <div id="steerage">
+                    <a href="/index">首頁</a>
+                    <img src="{% static "_img/00_layout/arrow01.gif" %}" width="18" height="7">本系簡介
+                    <img src="{% static "_img/00_layout/arrow01.gif" %}" width="18" height="7"> 沿革
+                </div>
+                {% include 'include/header.html' %}
+{% endblock %}

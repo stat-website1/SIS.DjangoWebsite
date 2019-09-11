@@ -1,0 +1,77 @@
+[Mon Jun 10 17:59:08.148776 2019] [wsgi:error] [pid 25955:tid 139822969521920] [remote 192.168.43.166:55604] Not Found: /
+[Mon Jun 10 17:59:53.902538 2019] [wsgi:error] [pid 25955:tid 139822860343040] [remote 192.168.43.166:55634] Not Found: /favicon.ico
+[Mon Jun 10 17:59:56.262313 2019] [wsgi:error] [pid 25955:tid 139822969521920] [remote 192.168.43.166:55658] Not Found: /
+[Mon Jun 10 17:59:56.322569 2019] [wsgi:error] [pid 25955:tid 139822860343040] [remote 192.168.43.166:55658] Not Found: /favicon.ico
+[Wed Jul 10 15:02:33.511201 2019] [wsgi:error] [pid 991:tid 140531642099456] [remote 192.168.43.166:38234] Not Found: /favicon.ico
+[Wed Jul 10 15:04:12.113293 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.166:38280] Not Found: /
+[Wed Jul 10 15:16:08.624752 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.140:49189] Not Found: /
+[Wed Jul 10 15:29:01.958036 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.166:38382] Not Found: /
+[Wed Jul 10 15:29:02.029837 2019] [wsgi:error] [pid 991:tid 140531642099456] [remote 192.168.43.166:38382] Not Found: /favicon.ico
+[Wed Jul 10 15:30:23.578244 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.166:38414] Not Found: /favicon.ico
+[Wed Jul 10 15:30:52.015620 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.166:38454] Not Found: /
+[Wed Jul 10 15:30:55.947873 2019] [wsgi:error] [pid 991:tid 140531642099456] [remote 192.168.43.166:38456] Not Found: /
+[Wed Jul 10 15:30:55.967505 2019] [wsgi:error] [pid 991:tid 140531566532352] [remote 192.168.43.166:38456] Not Found: /favicon.ico
+[Wed Sep 11 14:49:22.477324 2019] [wsgi:error] [pid 2014:tid 140717448849152] [remote 192.168.43.166:49078] Not Found: /
+[Wed Sep 11 14:49:22.759984 2019] [wsgi:error] [pid 2014:tid 140717566453504] [remote 192.168.43.166:49078] Not Found: /favicon.ico
+[Wed Sep 11 15:01:14.743466 2019] [wsgi:error] [pid 2014:tid 140717566453504] [remote 192.168.43.166:49268] Not Found: /index
+[Wed Sep 11 15:08:34.099176 2019] [wsgi:error] [pid 2014:tid 140717448849152] [remote 192.168.43.166:49416] Not Found: /
+[Wed Sep 11 15:08:36.102356 2019] [wsgi:error] [pid 2014:tid 140717566453504] [remote 192.168.43.166:49416] Not Found: /
+[Wed Sep 11 15:08:46.044899 2019] [wsgi:error] [pid 2014:tid 140717448849152] [remote 192.168.43.166:49418] Not Found: /favicon.ico
+[Wed Sep 11 15:08:56.235845 2019] [wsgi:error] [pid 2014:tid 140717448849152] [remote 192.168.43.166:49428] Not Found: /
+[Wed Sep 11 15:30:39.090305 2019] [wsgi:error] [pid 2014:tid 140717566453504] [remote 192.168.43.166:49908] Not Found: /
+[Wed Sep 11 15:30:39.144981 2019] [wsgi:error] [pid 2014:tid 140717448849152] [remote 192.168.43.166:49908] Not Found: /favicon.ico
+[Wed Sep 11 18:34:04.024946 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] Internal Server Error: /
+[Wed Sep 11 18:34:04.051727 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] Traceback (most recent call last):
+[Wed Sep 11 18:34:04.051744 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+[Wed Sep 11 18:34:04.051748 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return self.template.render(context)
+[Wed Sep 11 18:34:04.051752 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+[Wed Sep 11 18:34:04.051756 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return self._render(context)
+[Wed Sep 11 18:34:04.051760 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+[Wed Sep 11 18:34:04.051763 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return self.nodelist.render(context)
+[Wed Sep 11 18:34:04.051767 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+[Wed Sep 11 18:34:04.051782 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     bit = node.render_annotated(context)
+[Wed Sep 11 18:34:04.051786 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+[Wed Sep 11 18:34:04.051790 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return self.render(context)
+[Wed Sep 11 18:34:04.051806 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+[Wed Sep 11 18:34:04.051810 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     compiled_parent = self.get_parent(context)
+[Wed Sep 11 18:34:04.051813 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+[Wed Sep 11 18:34:04.051816 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return self.find_template(parent, context)
+[Wed Sep 11 18:34:04.051820 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+[Wed Sep 11 18:34:04.051823 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     template_name, skip=history,
+[Wed Sep 11 18:34:04.051827 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+[Wed Sep 11 18:34:04.051830 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     raise TemplateDoesNotExist(name, tried=tried)
+[Wed Sep 11 18:34:04.051834 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] django.template.exceptions.TemplateDoesNotExist: base.html
+[Wed Sep 11 18:34:04.051837 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] 
+[Wed Sep 11 18:34:04.051840 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] The above exception was the direct cause of the following exception:
+[Wed Sep 11 18:34:04.051857 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] 
+[Wed Sep 11 18:34:04.051860 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] Traceback (most recent call last):
+[Wed Sep 11 18:34:04.051863 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Wed Sep 11 18:34:04.051867 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     response = get_response(request)
+[Wed Sep 11 18:34:04.051870 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Wed Sep 11 18:34:04.051873 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     response = self.process_exception_by_middleware(e, request)
+[Wed Sep 11 18:34:04.051877 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Wed Sep 11 18:34:04.051880 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Wed Sep 11 18:34:04.051883 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/stat01/home/views.py", line 49, in home
+[Wed Sep 11 18:34:04.051889 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return render(request, 'index.html', locals())
+[Wed Sep 11 18:34:04.051893 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+[Wed Sep 11 18:34:04.051896 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     content = loader.render_to_string(template_name, context, request, using=using)
+[Wed Sep 11 18:34:04.051912 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+[Wed Sep 11 18:34:04.051916 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     return template.render(context, request)
+[Wed Sep 11 18:34:04.051919 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+[Wed Sep 11 18:34:04.051922 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     reraise(exc, self.backend)
+[Wed Sep 11 18:34:04.051925 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]   File "/WebSite/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+[Wed Sep 11 18:34:04.051929 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848]     raise new from exc
+[Wed Sep 11 18:34:04.051938 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] django.template.exceptions.TemplateDoesNotExist: base.html
+[Wed Sep 11 18:34:04.051954 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:48848] 
+[Wed Sep 11 18:34:04.215522 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48850] Not Found: /favicon.ico
+[Wed Sep 11 18:40:59.285995 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48878] ---
+[Wed Sep 11 18:40:59.286107 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48878] Query text: hi
+[Wed Sep 11 18:40:59.286149 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48878] Detected intent: Default Fallback Intent
+[Wed Sep 11 18:40:59.286185 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48878] Detected intent confidence: 1.0
+[Wed Sep 11 18:40:59.286220 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48878] Fulfillment text: \xe6\x88\x91\xe6\x80\x95\xe6\x88\x91\xe8\x81\xbd\xe4\xb8\x8d\xe6\x87\x82\xe4\xbd\xa0\xe7\x9a\x84\xe8\xa9\xb1\xe3\x80\x82
+[Wed Sep 11 18:41:54.624267 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48894] ---
+[Wed Sep 11 18:41:54.624337 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48894] Query text: hi
+[Wed Sep 11 18:41:54.624363 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48894] Detected intent: Default Welcome Intent
+[Wed Sep 11 18:41:54.624390 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48894] Detected intent confidence: 1.0
+[Wed Sep 11 18:41:54.624418 2019] [wsgi:error] [pid 931:tid 140406484051712] [remote 192.168.43.166:48894] Fulfillment text: Welcome to FJU Statistic Site !
+[Wed Sep 11 18:46:44.035604 2019] [wsgi:error] [pid 931:tid 140406593230592] [remote 192.168.43.166:49170] Not Found: /favicon.ico
