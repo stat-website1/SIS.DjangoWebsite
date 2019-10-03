@@ -6,26 +6,26 @@
 {% endblock %} 
 
 {% block content %}
+<div class="container">
+	<div class="row">
+	    <div class="column side">
+		<h1>Content</h1>
+	    </div>
+	    <div class="column middle">
+		<h1>Main Content</h1>
+	    </div>
+	    <div class="column side">
+		<h1>Content</h1>
+	    </div>
+	</div>
 
-<div class="row">
-    <div class="column side">
-        <h1>Content</h1>
-    </div>
-    <div class="column middle">
-        <h1>Main Content</h1>
-    </div>
-    <div class="column side">
-        <h1>Content</h1>
-    </div>
-</div>
-
-<form action="/" method="post" id="myForm">
+	<form action="/" method="post" id="myForm">
         {% csrf_token %}
                 <input type="text" name="user_input" value="" />
                 <button type="button" onclick="submit()" class="btn btn-warning">OK</button>
         </form>
         {% include "short.html" %}
-
+</div>
 {% endblock %}
 
 <!-- https://blog.csdn.net/zhu_free/article/details/48137375 -->

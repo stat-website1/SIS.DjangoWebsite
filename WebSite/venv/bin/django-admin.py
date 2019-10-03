@@ -1,4 +1,4 @@
-#!/WebSite/venv/bin/python3
+#!/home/ads/桌面/SIS.DjangoWebsite/WebSite/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

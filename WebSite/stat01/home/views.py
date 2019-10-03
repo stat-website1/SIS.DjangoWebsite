@@ -9,7 +9,7 @@ import os
 import uuid
 DIALOGFLOW_PROJECT_ID = 'django-statbot-shtmnf'
 DIALOGFLOW_LANGUAGE_CODE = 'zh-TW'
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/WebSite/stat01/home/Django-StatBot-ae3aee62a5a1.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/ads/桌面/SIS.DjangoWebsite/WebSite/stat01/home/Django-StatBot-ae3aee62a5a1.json"
 SESSION_ID = uuid.uuid1()
 
 

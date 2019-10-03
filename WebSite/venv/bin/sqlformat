@@ -1,4 +1,4 @@
-#!/WebSite/venv/bin/python3
+#!/home/ads/桌面/SIS.DjangoWebsite/WebSite/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

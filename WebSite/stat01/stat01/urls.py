@@ -39,7 +39,7 @@ from _sitemember.views import sitemember_01
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', views.home, name="home"), ####首頁
+    path('index/', views.home, name="home"), ####首頁
 
     path('news_01/', news_01), ###最新公告
 
