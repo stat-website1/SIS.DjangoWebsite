@@ -8,7 +8,7 @@ google-auth==1.6.3
 googleapis-common-protos==1.6.0
 grpcio==1.23.0
 idna==2.8
-mysqlclient==1.4.2.post1
+mysqlclient==1.4.4
 protobuf==3.9.1
 pyasn1==0.4.7
 pyasn1-modules==0.2.6
