@@ -2,7 +2,7 @@
 {% block title %}index{% endblock %} 
 {% load staticfiles %} 
 {% block link %}
-    <link rel="stylesheet" href="{% static 'css/CssLayout.1.css' %}" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="{% static '_css/layout.css' %}" type="text/css" media="screen" /> 
 {% endblock %} 
 
 {% block content %}
@@ -19,7 +19,7 @@
 	    </div>
 	</div>
 
-	<form action="/" method="post" id="myForm">
+	<form action="/index/" method="post" id="myForm">
         {% csrf_token %}
                 <input type="text" name="user_input" value="" />
                 <button type="button" onclick="submit()" class="btn btn-warning">OK</button>
