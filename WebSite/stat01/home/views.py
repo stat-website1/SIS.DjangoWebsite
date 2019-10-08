@@ -7,10 +7,16 @@ import dialogflow
 from google.api_core.exceptions import InvalidArgument
 import os
 import uuid
+#------- 新增 -------#
+from gtts import gTTS
+from pygame import mixer
+import random
+#------- 新增 -------#
 DIALOGFLOW_PROJECT_ID = 'django-statbot-shtmnf'
 DIALOGFLOW_LANGUAGE_CODE = 'zh-TW'
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:/Users/pcsh1/3D Objects/SIS.DjangoWebsite/WebSite/stat01/home/Django-StatBot-ae3aee62a5a1.json"
 SESSION_ID = uuid.uuid1()
+
 
 
 # Create your views here.
@@ -38,6 +44,22 @@ def home(request):
             print("Detected intent:", response.query_result.intent.display_name)
             print("Detected intent confidence:", response.query_result.intent_detection_confidence)
             print("Fulfillment text:", response.query_result.fulfillment_text)
+
+            #------- 新增 -------#
+            mytext = response.query_result.fulfillment_text
+            tts = gTTS(text=mytext, lang='zh-tw', slow=False)
+
+            rand = random.randint(0,3)
+            tts.save("./static/result_{}.mp3".format(rand))
+            mixer.init()
+            mixer.music.load("./static/result_{}.mp3".format(rand))
+            mixer.music.play()
+            while mixer.music.get_busy(): # check if the file is playing
+                pass
+            mixer.music.load('./static/result_copy.mp3')
+            
+            os.remove("./static/result_{}.mp3".format(rand))
+            #------- 新增 -------#
 
             return render(request, 'index.html', {'m_lastone': m_lastone})
 
