@@ -1,0 +1,49 @@
+body {
+  font-family: 'NotoSansTC', sans-serif;
+  background-color: #F6F4F0;
+  background-repeat: no-repeat;
+  background-image: url("lightblue.png");
+  color:#0A2562;
+  text-align:left;
+}
+
+h1{
+  font-size: 28px;
+}
+
+header{
+  margin-top: 20px;
+}
+
+table {
+  margin-top: 45px;
+  margin-left: 120px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  vertical-align: text-top;
+  font-size: 14px;
+   line-height: 25px;¡¡
+}
+
+header a {
+  font-family: 'NotoSansTC-Bold', sans-serif;
+  color:#0A2562;
+  display: vertical-align: middle;
+  font-size: 22px;
+  margin-left:120px;
+
+  text-decoration:none;
+}
+header a:hover {
+  color: #174EAF;
+}  
+footer{
+  position: fixed;
+  margin-bottom: -10px;
+  bottom: 0px;
+  left: 0;
+  text-align: right;
+}
