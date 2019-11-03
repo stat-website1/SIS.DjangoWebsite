@@ -1,42 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% block title %}兼任教師{% endblock %} 
 
-<!DOCTYPE html>
-<html>
-<body>
-    {% block content %}
-    {% load staticfiles %}
+
+{% block content %}
 <!-- flashAD   start-->
 <div id="bodyWapper">
-<div id="layoutImg"><div id="Layer1" style="position: relative; width: 0px; height: 0px; z-index: 10; visibility: visible; float: right; left: 80px; top: 0px;"><!-- #BeginLibraryItem "/Library/rightdoor.lbi" -->
- <div id="PageRightmenu" style="position:absolute; width:75px; height:220px; z-index:3;right:0px ;visibility: visible; top:145px;">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td height="73" align="left" valign="top"><img src="{% static "_img/00_layout/door_top.jpg" %}" alt="" width="75" height="73"></td>
-        </tr>
-        <tr>
-          <td class="doorMenuBg" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tbody><tr>
-              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/02_future.php">未來學生</a></td>
-            </tr>
-            <tr>
-              <td height="11" align="center"><img src="{% static "_img/00_layout/door_line.jpg"  %}"alt="" width="75" height="11"></td>
-            </tr>
-            <tr>
-              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/01_current.php">現有學生</a></td>
-            </tr>
-            <tr>
-              <td align="center"><img src="{% static "_img/00_layout/door_line.jpg" %}" alt="" width="75" height="11"></td>
-            </tr>
-            <tr>
-              <td height="20" align="center" class="doorMenuOver"><a href="http://www.stat.fju.edu.tw/_chinese/10_door/03_alumni.php">系所友</a></td>
-            </tr>
-          </tbody></table></td>
-        </tr>
-        <tr>
-          <td align="left" valign="top"><a href="http://www.stat.fju.edu.tw/_chinese/03_teacher/01_list.php?MID=2#TOP"><img src="{% static "_img/00_layout/door_btm.jpg"%}" width="75" height="38"></a></td>
-        </tr>
-      </tbody></table>
-    </div><!-- #EndLibraryItem --></div><!-- InstanceBeginEditable name="EditRegion5" --><img src="{% static "_img/00_layout/flashad03.jpg" %}" alt="輔仁大學統計資訊學系-師資陣容" width="960" height="145"><!-- InstanceEndEditable --></div>
+<div id="layoutImg">
+
+<!-- InstanceBeginEditable name="EditRegion5" -->
+<img src="{% static "_img/00_layout/flashad03.jpg" %}" alt="輔仁大學統計資訊學系-師資陣容" width="960" height="145">
+<!-- InstanceEndEditable -->
+</div>
 
 
 
@@ -227,6 +202,3 @@
 <!-- InstanceEndEditable --></div>
 </div>
 {% endblock %}
-
-</body><!-- InstanceEnd -->
-</html>

@@ -138,4 +138,4 @@ STATICFILES_DIRS=[                                                              
         os.path.join(BASE_DIR,'static'),                                            #注意，BASE_DIR 不用加引號
         ]
 
-STATIC_ROOT = '/WebSite/stat01/static/all_static'
+STATIC_ROOT = '/SIS.DjangoWebsite/stat01/static/all_static'

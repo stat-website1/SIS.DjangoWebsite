@@ -17,10 +17,13 @@ DIALOGFLOW_LANGUAGE_CODE = 'zh-TW'
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/ads/桌面/SIS.DjangoWebsite/stat01/home/Django-StatBot-ae3aee62a5a1.json"
 SESSION_ID = uuid.uuid1()
 
+### 首頁 ###
+def index(request):
+    return render(request,'home/index.html',locals())
 
 
-# Create your views here.
-def home(request):
+### Chatbot ###
+def chatbot(request):
     # --- 新增 --- #
     session_client = dialogflow.SessionsClient()
     session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
@@ -61,11 +64,11 @@ def home(request):
             os.remove("./static/result_{}.mp3".format(rand))
             #------- 新增 -------#
 
-            return render(request, 'index.html', {'m_lastone': m_lastone})
+            return render(request, 'home/chatbot.html', {'m_lastone': m_lastone})
 
         except InvalidArgument:
             raise
 
     # --- --- #
 
-    return render(request, 'index.html', locals())
+    return render(request, 'home/chatbot.html', locals())
