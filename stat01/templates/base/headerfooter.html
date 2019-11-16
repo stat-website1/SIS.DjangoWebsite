@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+ <head>
+  <meta charset="utf-8">
+  <title> {% block title %}{% endblock %}</title>
+
+  {% block link %}{% endblock %}
+    
+  {% load staticfiles %}
+
+  <link href="{% static "_css/style.css" %}" rel="stylesheet" type="text/css" /> 
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+</style>
+
+  <header>
+    <table width="100%">
+      <tr>
+        <th width="19%"><a href="http://127.0.0.1:8000/"><img src="{% static "_img/統計資訊系.png"  %}" width="80%"><</a></th>
+        <th width="19%"><a href="http://127.0.0.1:8000/" >系所簡介</a></th>
+        <th width="19%"><a href="http://127.0.0.1:8000/">師資介紹</a></th>
+        <th width="19%"><a href="http://127.0.0.1:8000/" >製作團隊</a></th>
+        <th width="24%"></th>
+      </tr>
+    </table>    
+  </header>
+
+
+<body>
+    {% block content %}
+    {% endblock %}  
+</body>
+
+  <footer>
+    <img src="{% static '_img/footer.png' %}" width="100%" >
+  </footer>        
+</body>
+</html>
