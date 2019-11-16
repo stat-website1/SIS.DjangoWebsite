@@ -1,23 +1,20 @@
-{% extends 'base/base.html' %} 
-{% block title %}chatbot{% endblock %} 
+﻿{% extends 'base/headerfooter.html' %} 
+{% block title %}輔仁大學統計資訊學系{% endblock %} 
 {% load staticfiles %} 
 {% block link %}
-    <link rel="stylesheet" href="{% static '_css/layout.css' %}" type="text/css" media="screen" /> 
 {% endblock %} 
 
-{% block content %}
+    {% block content %}
+  
+
 <div class="container">
-	<div class="row">
-	    <div class="column side">
-		<h1>Content</h1>
-	    </div>
-	    <div class="column middle">
-		<h1>Main Content</h1>
-	    </div>
-	    <div class="column side">
-		<h1>Content</h1>
-	    </div>
-	</div>
+	<table>
+		<th width="10%">請輸入你的問題：</th>
+		<th width="10%"></th>
+		<th width="10%"></th>
+	
+	
+	</table>
 
 	<!-- 語音輸入 -->
 	<script type="text/javascript">
@@ -110,6 +107,12 @@
         </form>
         {% include "home/short.html" %}
 </div>
-{% endblock %}
+    {% endblock %} 
 
-<!-- https://blog.csdn.net/zhu_free/article/details/48137375 -->
+  </body>
+  <footer>
+    <img src="footer.png" width="100%" >
+  </footer>        
+</body>
+</html>
+

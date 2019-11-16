@@ -1,11 +1,151 @@
-{% extends 'base/base.html' %} 
-{% block title %}index{% endblock %} 
+{% extends 'base/headerfooter.html' %} 
+{% block title %}輔仁大學統計資訊學系{% endblock %} 
 {% load staticfiles %} 
 {% block link %}
-    <link rel="stylesheet" href="{% static '_css/layout.css' %}" type="text/css" media="screen" /> 
 {% endblock %} 
 
-{% block content %}
-{% endblock %}
+    {% block content %}
+    <a href="http://127.0.0.1:8000/chatbot/" class="float">
+      <i class="fa fa-plus my-float"></i>
+    </a>
+    <table width="100%">
+      <h1>&nbsp;<br>
+      </h1>
+      <img src="{% static '_img/site.png' %}" width="85%">
+      <h1>&nbsp;<br><br>
+      </h1>
+      <tr>
+        <th width="60%"><h1>沿革</h1></th>
+        <th width="5%"><h1>&nbsp;</h1></th>
+        <th width="35%"><h1>&nbsp;</h1></th>
+    
+      </tr>
+        <td>
+        本系配合國家教育政策及社會需要，於1969年7月成立會計統計學系，分
+        「會計」、「統計」兩組。爾後因應市場對分析人才的需求，為強化統計
+        專業訓練，於1973年獨立為統計學系。本系初成立時為單班制，招收社會
+        組學生，1990年增為雙班，每年招收120名學生。為符合本系的發展方
+        向，於2001年8月起調整系名為統計資訊學系，畢業授予管理學學士。本
+        系隸屬之管理學院，本院於2005年4月15日通過AACSB國際商管學院促進
+        協會認證，成為台灣第一所通過AACSB認證之大學。</br></br>
+        為培育兼具理論及實務整合應用之進階專業人才，本系於1995年8月創辦
+        應用統計研究所，為國內第一所以應用統計專業人才培育為宗旨之獨立研
+        究所。爾後，因各界對統計分析之需求日增，於2000年成立「應用統計研
+        究所碩士在職專班」，提供在職人士良好的進修環境及學習規劃，增強其
+        在工作上統計分析的專業能力。
 
-<!-- https://blog.csdn.net/zhu_free/article/details/48137375 -->
+        <br><br>
+        <h1>歷史沿革</h1>
+        2010&nbsp;&nbsp;「統計資訊學系」與「應用統計研究所」系所合一</br>
+        2005&nbsp;&nbsp;&nbsp;本院通過AACSB國際商管學院促進協會認證</br>
+        2001&nbsp;&nbsp;&nbsp;調整系名為「統計資訊學系」</br>
+        2000&nbsp;&nbsp;&nbsp;成立「應用統計研究所碩士在職專班」</br>
+        1995&nbsp;&nbsp;&nbsp;協助創設成立「應用統計研究所」，為一獨立所恢復招</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一類組的學生迄今</br>
+        1991&nbsp;&nbsp;&nbsp;首度招收第二及三類組的學生</br>
+        1990&nbsp;&nbsp;&nbsp;增為「雙班制」</br>
+        1973&nbsp;&nbsp;&nbsp;獨立為「統計學系」，招收社會組學生，單班制</br>
+        1969&nbsp;&nbsp;&nbsp;成立「會計統計學系」</br>          1960&nbsp;&nbsp;&nbsp;教育部核准輔仁大學在台復校</br>
+        1952&nbsp;&nbsp;&nbsp;因院系調整併入北京師範大學</br>
+        1929&nbsp;&nbsp;&nbsp;輔仁大學於教育部正式立案</br>
+        1927&nbsp;&nbsp;&nbsp;北洋政府准予試辦，並正式將校名改為輔仁大學</br>
+        1925&nbsp;&nbsp;&nbsp;由美國本篤會於北京創辦輔仁大學之前身「輔仁社」</br>
+        </td>
+        <td>&nbsp; </td>
+        <td>
+          <h1>&nbsp; </br></br></br></h1>
+          <img src="{% static '_img/building.png' %}" height="60%">
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th width="20%"><h1>師資介紹</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+      </tr>
+      <tr>
+        <td><img src="{% static '_img/teacher/陳瑞兆.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/瑞珠.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/jb.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/孝雲.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/修女.jpg' %}" ></td>
+      </tr>
+      <tr>
+        <td>陳瑞照 教授</td>
+        <td>莊瑞珠 教授</td>
+        <td>李鍾斌 助理教授</td>
+        <td>黃孝雲 副教授(系主任)</td>
+        <td>魏嘉華 副教授</td>
+      </tr>
+      <tr>
+        <td><img src="{% static '_img/teacher/邵曰仁.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/吳建和.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/侯家鼎.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/梁德馨.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/盧宏益.jpg' %}" width="90%"></td>
+      </tr>
+      <tr>
+        <td>邵曰仁 教授 (學術特聘教授)</td>
+        <td>吳建和 副教授</td>
+        <td>侯家鼎 教授 (學術特聘教授)</td>
+        <td>梁德馨 教授</td>
+        <td>盧宏益 副教授</td>
+      </tr>
+      <tr>
+        <td><img src="{% static '_img/teacher/蔡嘉仁.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/蘇榮弘.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/杜逸寧.jpg' %}" width="90%"></td>
+        <td><img src="{% static '_img/teacher/邵皓強.jpg' %}" width="90%"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>蔡嘉仁 助理教授</td>
+        <td>蘇榮弘 助理教授</td>
+        <td>杜逸寧 副教授</td>
+        <td>邵皓強 助理教授</td>
+        <td></td>
+      </tr> 
+    </table>
+    <table>
+      <tr>
+        <th width="20%"><h1>製作團隊</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+        <th width="20%"><h1>&nbsp;</h1></th>
+      </tr>
+      <tr>
+        <td><a href="http://127.0.0.1:8000/sitemember_01/"><img src="{% static '_img/site_member/製作團隊1.jpg' %}" width="90%"></a></td>
+        <td><a href="http://127.0.0.1:8000/sitemember_02/"><img src="{% static '_img/site_member/製作團隊2.jpg' %}" width="90%"></a></td>
+        <td><a href="http://127.0.0.1:8000/sitemember_03/"><img src="{% static '_img/site_member/製作團隊3.jpg' %}" width="90%"></a></td>
+        <td><a href="http://127.0.0.1:8000/sitemember_04/"><img src="{% static '_img/site_member/製作團隊4.jpg' %}" width="90%"></a></td>
+        <td><a href="http://127.0.0.1:8000/sitemember_05/"><img src="{% static '_img/site_member/製作團隊5.jpg' %}" width="90%"></a></td>
+      </tr>
+      <tr>
+        <td>姜沛妤</td>
+        <td>張哲明</td>
+        <td>黃勝崧</td>
+        <td>黃丰嘉</td>
+        <td>蔡沅珈</td>
+      </tr>
+      <tr>
+        <td><a href="http://127.0.0.1:8000/sitemember_06/"><img src="{% static '_img/site_member/製作團隊6.jpg' %}" width="90%"></a></td>
+        <td><a href="http://127.0.0.1:8000/sitemember_07/"><img src="{% static '_img/site_member/製作團隊7.jpg' %}" width="90%"></a></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>陳宥菱</td>
+        <td>蘇恆煒</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      
+    </table>
+    {% endblock %} 
