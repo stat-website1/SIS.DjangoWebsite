@@ -22,7 +22,7 @@ from django.urls import path
 
 from home import views
 from _teacher.views import teacher_01,teacher_02,teacher_03
-from _sitemember.views import sitemember_01
+from _sitemember.views import sitemember_01,sitemember_02,sitemember_03,sitemember_04,sitemember_05,sitemember_06,sitemember_07
 
 
 
@@ -54,6 +54,13 @@ urlpatterns = [
 
     #--- app: _sitemember---#
     path('sitemember_01/', sitemember_01), ### 網站製作團隊
+    path('sitemember_02/', sitemember_02),
+    path('sitemember_03/', sitemember_03),
+    path('sitemember_04/', sitemember_04),
+    path('sitemember_05/', sitemember_05),
+    path('sitemember_06/', sitemember_06),
+    path('sitemember_07/', sitemember_07),
+
 
 
 
