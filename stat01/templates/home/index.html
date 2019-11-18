@@ -5,15 +5,18 @@
 {% endblock %} 
 
     {% block content %}
-    <a href="http://127.0.0.1:8000/chatbot/" class="float">
+    <a href="/chatbot/" class="float">
       <i class="fa fa-plus my-float"></i>
     </a>
+
+<div id="history">
     <table width="100%">
       <h1>&nbsp;<br>
       </h1>
       <img src="{% static '_img/site.png' %}" width="85%">
       <h1>&nbsp;<br><br>
       </h1>
+
       <tr>
         <th width="60%"><h1>沿革</h1></th>
         <th width="5%"><h1>&nbsp;</h1></th>
@@ -58,7 +61,9 @@
         </td>
       </tr>
     </table>
+</div>
 
+<div id="teacher">
     <table>
       <tr>
         <th width="20%"><h1>師資介紹</h1></th>
@@ -110,6 +115,9 @@
         <td></td>
       </tr> 
     </table>
+</div>
+
+<div id="sitemember">
     <table>
       <tr>
         <th width="20%"><h1>製作團隊</h1></th>
@@ -119,11 +127,11 @@
         <th width="20%"><h1>&nbsp;</h1></th>
       </tr>
       <tr>
-        <td><a href="http://127.0.0.1:8000/sitemember_01/"><img src="{% static '_img/site_member/製作團隊1.jpg' %}" width="90%"></a></td>
-        <td><a href="http://127.0.0.1:8000/sitemember_02/"><img src="{% static '_img/site_member/製作團隊2.jpg' %}" width="90%"></a></td>
-        <td><a href="http://127.0.0.1:8000/sitemember_03/"><img src="{% static '_img/site_member/製作團隊3.jpg' %}" width="90%"></a></td>
-        <td><a href="http://127.0.0.1:8000/sitemember_04/"><img src="{% static '_img/site_member/製作團隊4.jpg' %}" width="90%"></a></td>
-        <td><a href="http://127.0.0.1:8000/sitemember_05/"><img src="{% static '_img/site_member/製作團隊5.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_01/"><img src="{% static '_img/site_member/製作團隊1.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_02/"><img src="{% static '_img/site_member/製作團隊2.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_03/"><img src="{% static '_img/site_member/製作團隊3.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_04/"><img src="{% static '_img/site_member/製作團隊4.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_05/"><img src="{% static '_img/site_member/製作團隊5.jpg' %}" width="90%"></a></td>
       </tr>
       <tr>
         <td>姜沛妤</td>
@@ -133,8 +141,8 @@
         <td>蔡沅珈</td>
       </tr>
       <tr>
-        <td><a href="http://127.0.0.1:8000/sitemember_06/"><img src="{% static '_img/site_member/製作團隊6.jpg' %}" width="90%"></a></td>
-        <td><a href="http://127.0.0.1:8000/sitemember_07/"><img src="{% static '_img/site_member/製作團隊7.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_06/"><img src="{% static '_img/site_member/製作團隊6.jpg' %}" width="90%"></a></td>
+        <td><a href="/sitemember_07/"><img src="{% static '_img/site_member/製作團隊7.jpg' %}" width="90%"></a></td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -148,4 +156,5 @@
       </tr>
       
     </table>
+</div>
     {% endblock %} 
