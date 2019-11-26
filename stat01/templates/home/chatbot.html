@@ -80,9 +80,14 @@
 		  };
 		}
 		</script>   
-		<BR/>
+	<table>
+	<tr><th>
 		最後結果：<input id="textBox" type="text" size="60" value=""/><BR/>
+	</th></tr>
+	<tr><th>
 		中間結果：<input id="tempBox" type="text" size="60" value=""/><BR/>
+	</tr></th>
+	<tr><th>
 		辨識語言：
 		<select id="langCombo">
 		  <option value="en-US">英文(美國)</option>
@@ -90,7 +95,9 @@
 		</select>
 		<input id="startStopButton" type="button" value="辨識" onclick="startButton(event)"/><BR/>
 		<label id="infoBox"></label>
+	</tr></th>
 
+	<tr><th>
 	<!-- 人頭 
 	<script src="https://www.mediasemantics.com/agent.min.js"></script>
 		<div id="myDiv" style="width:300px; height:400px;"></div>
@@ -104,6 +111,8 @@
         {% csrf_token %}
                 <input type="text" id="final_user_input" name="user_input" value="" />
                 <button type="button" onclick="submit()" class="btn btn-warning">OK</button>
+	</tr></th>
+	</table>
         </form>
         {% include "home/short.html" %}
 </div>
