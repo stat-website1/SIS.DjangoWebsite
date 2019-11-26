@@ -61,10 +61,20 @@ footer{
   box-shadow: 0.8vmin 0.8vmin 1.2vmin #999;
 }
 
+i img{
+	margin-top: 1vmin;
+}
+
 .my-float{
   margin-top:22px;
 }
 
 .bio{
   margin-top: 12vmin;
+}
+
+.container{
+  margin-left: 20vmin;
+  margin-top: 10vmin;
+
 }
