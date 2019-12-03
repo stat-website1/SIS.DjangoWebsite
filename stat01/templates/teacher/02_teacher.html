@@ -1,204 +1,33 @@
-{% extends 'base/base.html' %}
-{% load staticfiles %}
-{% block title %}兼任教師{% endblock %} 
+{% extends 'base/headerfooter.html' %} 
+{% block title %}輔仁大學統計資訊學系{% endblock %} 
+{% load staticfiles %} 
+{% block link %}
+{% endblock %} 
 
-
-{% block content %}
-<!-- flashAD   start-->
-<div id="bodyWapper">
-<div id="layoutImg">
-
-<!-- InstanceBeginEditable name="EditRegion5" -->
-<img src="{% static "_img/00_layout/flashad03.jpg" %}" alt="輔仁大學統計資訊學系-師資陣容" width="960" height="145">
-<!-- InstanceEndEditable -->
-</div>
-
-
-
- 
-
-<!-- body main wapper  start-->
-<div id="body_w0"><!-- InstanceBeginEditable name="EditRegion3" -->
-  <div id="body_w1"><span class=""><img src="{% static "_img/03_teacher/title_teacher.jpg" %}"alt="輔仁大學統計資訊學系-師資陣容" width="170" height="45"></span>
-    <div class="leftmenu01">
-      <ul>
-			   <li><a href="/teacher_01">專任教師</a></li>
-						   <li><a href="/teacher_02"><span class="leftmenu02">兼任教師</span></a></li>
-						   <li><a href="/teacher_03">行政組員</a></li>
-			      </ul>
-    </div>
-    <!-- quicklink start-->
-
-            <div class="quicklinkMarg"></div>
-			<div class="menuQuick"><a href="http://www.stat.fju.edu.tw/_chinese/06_student/05_album.php" target="_self"><img src="{% static "_img/menu01294041777.jpg" %}" width="170" alt="活動相簿"></a></div>
-			            <div class="quicklinkMarg"></div>
-			<div class="menuQuick"><a href="http://www.stat.fju.edu.tw/_chinese/04_class/01_overview.php" target="_self"><img src="{% static "_img/menu01294041695.jpg" %}" width="170" alt="課程資訊"></a></div>
-			  </div>
-<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditRegion4" -->
-<div id="body_w2">
-  <!-- title start-->
-  <div id="bodytop_w0">
-    <div id="bodyTitle">兼任教師</div>
-    <div id="steerage"><a href="http://www.stat.fju.edu.tw/index.php">首頁</a><img src="{% static "./02_teacher_files/arrow01.gif"%}" width="18" height="7"><a href="http://www.stat.fju.edu.tw/_chinese/03_teacher/01_list.php">師資陣容</a><img src="{% static "./02_teacher_files/arrow01.gif" %}" width="18" height="7"><span class="leftmenu02">兼任教師</span></div>
-  </div>
-  <!-- body layout start-->
-  <div class="edit">
-			  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：廖佩珊</li>
-										 <li>職稱：兼任副教授</li>
-										 <li>學歷：美國康乃狄克州立大學 統計博士</li>
-										 <li>專長：調查研究、應用統計</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：吳開霖</li>
-										 <li>職稱：兼任助理教授</li>
-										 <li>學歷：輔仁大學商學研究所 博士</li>
-										 <li>專長：統計決策、貝氏分析、財務計量、企業資源規劃、行銷資訊系統</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：李　智</li>
-										 <li>職稱：兼任副教授級專業技術人員</li>
-										 <li>學歷：坎培拉大學資訊科技所碩士</li>
-										 <li>專長：資訊類</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：周靖秦</li>
-										 <li>職稱：兼任助理教授</li>
-										 <li>學歷：國立台北大學經濟學系博士</li>
-										 <li>專長：國際經濟學 國際金融 時間序列分析</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：侯永琪</li>
-										 <li>職稱：兼任教授</li>
-										 <li>學歷：淡江大學美國研究所 博士</li>
-										 <li>專長：美國高等教育、英語教學、 美國政府與政治、美國外交政策</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：張光昭</li>
-										 <li>職稱：兼任教授</li>
-										 <li>學歷：美國德州大學阿靈頓分校 統計博士</li>
-										 <li>專長：抽樣方法、統計模擬、迴歸分析</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：陳秀淋</li>
-										 <li>職稱：兼任教授(經濟系專任)</li>
-										 <li>學歷：中正大學國際經濟  博士</li>
-										 <li>專長：國際金融、總體計量</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：陳輝逢</li>
-										 <li>職稱：兼任講師</li>
-										 <li>學歷：政治大學統計研究所 碩士</li>
-										 <li>專長：行銷管理、調查實務</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：黃榮華</li>
-										 <li>職稱：兼任教授(企管系專任)</li>
-										 <li>學歷：國立台灣工業技術學院工業管理 博士</li>
-										 <li>專長：生產與作業管理、生產規劃系統</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：戴　政</li>
-										 <li>職稱：兼任教授</li>
-										 <li>學歷：美國南卡羅萊納醫學大學生物統計 博士</li>
-										 <li>專長：生物統計</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：劉致顯</li>
-										 <li>職稱：兼任助理教授級專業技術人員</li>
-										 <li>學歷：明尼蘇達州立大學應用數學電腦學系碩士</li>
-										 <li>專長：國際商業談判、生技產業分析課程、統計分析、SAS Programming</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：謝鑫能</li>
-										 <li>職稱：兼任助理教授</li>
-										 <li>學歷：國立臺灣大學農藝學研究所生物統計組 博士</li>
-										 <li>專長：生物統計、理論統計</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：顏立宇</li>
-										 <li>職稱：兼任助理教授級專業技術人員</li>
-										 <li>學歷：加州大學聖塔巴巴拉校區統計暨應用機率研究所 碩士</li>
-										 <li>專長：複利數學、保險精算</li>
-									  </ul>
-			  </div>
-			  </div>
-						  <div class="teacherComent">
-			  <span class=""></span>
-			  <div class="teacherInfo">
-				  <ul>
-								 <li>姓名：蔡青芳</li>
-										 <li>職稱：兼任講師</li>
-										 <li>學歷：美國威斯康辛麥迪遜大學 </li>
-										 <li>專長：保險統計</li>
-									  </ul>
-			  </div>
-			  </div>
-			  </div>
-</div>
-<!-- InstanceEndEditable --></div>
-</div>
-{% endblock %}
+    {% block content %}
+    <a href="/chatbot/" class="float">
+      <i class="fa fa-plus my-float">
+        <img src="{% static '_img/woman.png' %}" width="85%">
+      </i>
+    </a>
+    <table width="80%" class="bio">
+      <tr>
+        <th width="40%" rowspan="3">
+          <img src="{% static '_img/teacher/瑞珠.jpg' %}" width="80%">
+        </th>
+        <th><br>莊瑞珠</th>    
+      </tr>
+      <tr>
+        <td>
+          職位：教授<br>
+          學歷：美國紐約州立大學石溪分校 統計博士<br>
+          專長：統計計算、多變量分析<br>
+          電話：02-2905-2758 (辦公室SL232)<br>
+          E-Mail：stat1007@mail.fju.edu.tw<br>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+    {% endblock %} 

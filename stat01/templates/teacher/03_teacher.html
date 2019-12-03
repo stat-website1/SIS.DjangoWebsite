@@ -1,63 +1,33 @@
-{% extends 'base/base_grid.html' %}
-{% load staticfiles %}
-{% block title %}行政組員{% endblock %} 
+{% extends 'base/headerfooter.html' %} 
+{% block title %}輔仁大學統計資訊學系{% endblock %} 
+{% load staticfiles %} 
+{% block link %}
+{% endblock %} 
 
-
-
-{% block style %}
-{% endblock %}
-                                              
-<!---------------------------------------------------------以上直接照打，不用改------------------------------------------------------>
-{% block grid_01 %}
-            <ul class="list-group ">
-              <li class="list-group-item"><a href="/about_01">沿革</a></li>
-              <li class="list-group-item"><a href="/about_02">教學理念</a></li>
-              <li class="list-group-item"><a href="/about_03">設備</a></li>
-              <li class="list-group-item"><a href="/about_04">特色</a></li>
-              <li class="list-group-item"><a href="/about_05">未來發展</a></li>
-              <li class="list-group-item"><a href="/about_06">章程辦法</a></li>
-              <li class="list-group-item"><a href="/about_07">交通資訊</a></li>
-              <li class="list-group-item"><a href="/about_08">教師學術研究</a></li>
-            </ul>
-            <img src="{% static "_img/02_about/title_about.jpg" %}" alt="輔仁大學統計資訊學系-本系簡介" width="170" height="45">
-            <div class="menuQuick"><a href="" target="_self"><img src="{% static "_img/menu01294041777.jpg" %}" alt="活動相簿" width="170"></a></div>
-            <div class="menuQuick"><a href="" target="_self"><img src="{% static "_img/menu01294047528.jpg" %}" alt="招生資訊" width="170"></a></div>
-{% endblock %}
-
-{% block grid_02 %}
-<img src="{% static "_img/SIRLA_Logo_150x143.png" %}" alt="活動相簿" width="170">
-<ul>
-<li>姓名：周依倩</li>
-<li>職稱：學士班秘書</li>
-<li>學歷：輔仁大學應用統計研究所管理學碩士</li>
-<li>電話：02-2905-2606</li>
-<li>E-Mail：<a href="mailto:stat1010@mail.fju.edu.tw">stat1010@mail.fju.edu.tw</a></li>
-<li>Website：<a href="" target="_blank"></a></li>
-</ul>
-{% endblock %}
-
-{% block grid_03 %}
-<ul>
-<li>姓名：謝依螢</li>
-<li>職稱：碩士暨碩專班秘書</li>
-<li>電話：02-2905-2935</li>
-<li>E-Mail：<a href="mailto:085722@mail.fju.edu.tw">085722@mail.fju.edu.tw</a></li>
-<li>Website：<a href="" target="_blank"></a></li>
-</ul>
-{% endblock %}
-{% block grid_04 %}
-            <ul class="list-group ">
-              <li class="list-group-item"><a href="/about_01">沿革</a></li>
-            </ul>
-{% endblock %}
-{% block grid_05 %}
-            <ul class="list-group ">
-              <li class="list-group-item"><a href="/about_08">教師學術研究</a></li>
-            </ul>
-{% endblock %}
-{% block grid_06 %}
-            <ul class="list-group ">
-              <li class="list-group-item"><a href="/about_02">教學理念</a></li>
-              <li class="list-group-item"><a href="/about_03">設備</a></li>
-            </ul>
-{% endblock %}
+    {% block content %}
+    <a href="/chatbot/" class="float">
+      <i class="fa fa-plus my-float">
+        <img src="{% static '_img/woman.png' %}" width="85%">
+      </i>
+    </a>
+    <table width="80%" class="bio">
+      <tr>
+        <th width="40%" rowspan="3">
+          <img src="{% static '_img/teacher/jb.jpg' %}" width="80%">
+        </th>
+        <th><br>李鍾斌</th>    
+      </tr>
+      <tr>
+        <td>
+          職位：助理教授(兼 大數據產業智慧學分學程召集人)<br>
+          學歷：國立交通大學資訊管理研究所 資訊管理學博士<br>
+          專長：資訊管理、電子商務、資訊安全<br>
+          電話：02-2905-2798 (辦公室SL233)<br>
+          E-Mail：071635@mail.fju.edu.tw<br>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+    {% endblock %} 
