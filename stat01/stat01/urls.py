@@ -21,7 +21,7 @@ from django.contrib import admin
 from django.urls import path
 
 from home import views
-from _teacher.views import teacher_01,teacher_02,teacher_03
+from _teacher.views import teacher_01,teacher_02,teacher_03,teacher_04,teacher_05,teacher_06,teacher_07,teacher_08,teacher_09,teacher_10,teacher_11,teacher_12,teacher_13,teacher_14,teacher_15
 from _sitemember.views import sitemember_01,sitemember_02,sitemember_03,sitemember_04,sitemember_05,sitemember_06,sitemember_07
 
 
@@ -51,6 +51,19 @@ urlpatterns = [
     path('teacher_01/', teacher_01), ### 師資陣容
     path('teacher_02/', teacher_02),
     path('teacher_03/', teacher_03),
+    path('teacher_04/', teacher_04),
+    path('teacher_05/', teacher_05),
+    path('teacher_06/', teacher_06),
+    path('teacher_07/', teacher_07),
+    path('teacher_08/', teacher_08),
+    path('teacher_09/', teacher_09),
+    path('teacher_10/', teacher_10),
+    path('teacher_11/', teacher_11),
+    path('teacher_12/', teacher_12),
+    path('teacher_13/', teacher_13),
+    path('teacher_14/', teacher_14),
+    path('teacher_15/', teacher_15),
+
 
     #--- app: _sitemember---#
     path('sitemember_01/', sitemember_01), ### 網站製作團隊
