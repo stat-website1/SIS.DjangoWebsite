@@ -9,7 +9,7 @@
 
 <div class="container">
 	<table>
-		<tr><th >
+		<tr><th>
 	<!-- 人頭 
 	<script src="https://www.mediasemantics.com/agent.min.js"></script>
 		<div id="myDiv" style="width:300px; height:400px;"></div>
@@ -21,13 +21,12 @@
 	<!-- 使用者輸入 -->
 		<form action="/chatbot/" method="post" id="myForm">
         {% csrf_token %}
-             請輸入你的問題：<input type="text" id="final_user_input" name="user_input" value="" />
+        	 請輸入你的問題：<br><textarea rows="3" cols="26" type="text" id="final_user_input" name="user_input" value="" /></textarea>
              <button type="button" onclick="submit()" class="btn btn-warning">送出問題</button><BR/>
          </th>
-         <th>
-         	<img src="{% static '_img/虛擬秘書.gif' %}" width="30%" ><br>
-            Query text:<h1 style="color:orange;">{{ m_lastone.user_input_text }}
-            
+         <th align="center">
+         	<img src="{% static '_img/虛擬秘書.gif' %}" width="50%" ><br>
+            Fulfillment text: <h3 style="color:blue;">{{ m_lastone.chatbot_output_text }}
          </th>
      </tr>
 	
@@ -107,8 +106,8 @@
 	<tr><th>
 		辨識語言：
 		<select id="langCombo">
-		  <option value="en-US">英文(美國)</option>
 		  <option value="cmn-Hant-TW">中文(台灣)</option>
+		  <option value="en-US">英文(美國)</option>
 		</select>
 		<input id="startStopButton" type="button" value="辨識" onclick="startButton(event)"/><BR/>
 		<label id="infoBox"></label>
